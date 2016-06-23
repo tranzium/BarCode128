@@ -490,7 +490,7 @@ class BarCode128
 	 */
 	public function LineWidth($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->dims['px_width'];
 		
 		if (intval($px) < 1)
@@ -508,7 +508,7 @@ class BarCode128
 	 */
 	public function BorderSpacing($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->dims['b_spacing'];
 		
 		if (intval($px) < 0)
@@ -526,7 +526,7 @@ class BarCode128
 	 */
 	public function BorderWidth($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->dims['b_width'];
 		
 		if (intval($px) < 0)
@@ -544,7 +544,7 @@ class BarCode128
 	 */
 	public function TextSpacing($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->dims['txt_spacing'];
 		
 		if (intval($px) < 0)
@@ -617,7 +617,7 @@ class BarCode128
 	 */
 	public function FontSize($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->calcFontSize;
 		
 		$this->calcFontSize = intval($px);
@@ -634,7 +634,7 @@ class BarCode128
 	 */
 	public function Height($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->dims['height'];
 		
 		$px = intval($px);
@@ -653,7 +653,7 @@ class BarCode128
 	 */
 	public function Width($px = null)
 	{
-		if ($px == null)
+		if ($px === null)
 			return $this->dims['width'];
 
 		$trace = debug_backtrace();
